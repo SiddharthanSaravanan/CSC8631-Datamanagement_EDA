@@ -2,7 +2,9 @@
 title: "Analysis of cyber security Video Stats"
 author: "Siddharthan"
 date: "02/12/2020"
-output: pdf_document
+output:
+  pdf_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -49,45 +51,70 @@ The index 5 and 7 from the code represents the two responses total_downloads abd
 
 ## Graphical Analysis
 
-The graphical analysis is made with line graphs, points and bar plots, which helps to visualize and interpret the data. The **ggplot2** library is used for this graphical analysis. 
+The graphical analysis is made with line graphs, points and bar plots, which helps to visualize and interpret the data. The **ggplot2** library is used for this graphical analysis.
+
+**Plot1 :**
 
 ```{r Bar Plot1, echo=FALSE, fig.height=4, fig.width=7}
 plot1
 ```
 
 The plot represents the analysis made with total views of the courses between two months from the dataset. This plot graphically explains that there is a certain amount of increase in views to the latter month which is *November* compared to that of the previous month *September*. The modules has made some significant impact with the leaners and this made a growth in the trend  of viewers. The modules which are viewed in less numbers were also made an impact the following month with the increase in the viewers.
-\newline
+
+**Plot2 :**
 
 ```{r Bar Plot2, echo=FALSE, fig.height=4, fig.width=7}
 plot2
 ```
 
-The above bar plot represents the analysis made based on the modeules that are viewed *100%* from the Asia region. From this graph its easy to interpret that above **60%** of the learners have viewed most of the modules completely. And below **40%** of the learners have viewed two or three modules completely. This suggests that the learners are not interested in viewing those modules as it maybe out of the scope.
-\newline
+The above bar plot represents the analysis made based on the modeules that are viewed ***100%*** from the Asia region. From this graph its easy to interpret that above **60%** of the learners have viewed most of the modules completely. And below **40%** of the learners have viewed two or three modules completely. This suggests that the learners are not interested in viewing those modules as it maybe out of the scope.
 
-```{r echo=FALSE, fig.height=4, fig.width=7}
+**Plot3 :**
+
+```{r Point Plot1, echo=FALSE, fig.height=4, fig.width=7}
 plot3
 ```
 
-```{r echo=FALSE, fig.height=4, fig.width=7}
+The obtained point plot represents the analysis made on the courses based on the view percentage from the Europe region. From the plot, its significantly visible that the module did not made a much impact in the Europe region learners as the view percentage critically dropped during the **November** month compared to the month of **September**. The lightly shaded points shows that the video duration is less than 100 minutes and the dark shaded points shows the video duration is more than 400 minutes.
+
+**Plot4 :**
+
+```{r Line Graph1, echo=FALSE, fig.height=3.5, fig.width=7}
 plot4
 ```
 
-```{r echo=FALSE, fig.height=4, fig.width=7}
+The line graph represents the simple analysis made on the view percentage of the North American region learners with respect to the video duration. It is plotted comparing with the different months. Its obvious that the learners have lost their interest in the modules as it clearly shows a depletion in the view percentage in the **November** month. This sums up that the learners started downloading the contents of the modules rather than viewing the materials online.
+
+**Plot5 :**
+
+```{r Point Plot2, echo=FALSE, fig.height=4, fig.width=7}
 plot5
 ```
 
-```{r echo=FALSE, fig.height=4, fig.width=7}
+The obtained point plot represents the analysis made on the modules that are viewed using the desktop devices. Based on the total views of the modules, the points represent that the learners viewed through the desktop devices for most important topics, whereas there is a shrinkage in desktop views for the courses which has less viewers.
+
+**Plot6 :**
+
+```{r Point Plot3, echo=FALSE, fig.height=4, fig.width=7}
 plot6
 ```
 
-```{r echo=FALSE, fig.height=4, fig.width=7}
+The above obtained plot represents the modules that are downloaded and viewed in the hd format. From this graph, it obvious that only one module is downloaded and viewed in hd format by most of the learners. This suggests that the learners had an impact from that particular module as we can assume it was predominantly used in their work environment.
+
+**Plot7 :**
+
+```{r Bar Chart, echo=FALSE, fig.height=4, fig.width=7}
 plot7
 ```
 
-```{r fig.height=4, fig.width=7}
+This bar chart clearly shows that there is an increase in course downloads in later month compared to that of the previous month. This clearly represents that the learners are interested in the contents of the course and they downloaded the contents for further usage purposes. There was no depletion in any course that was being downloaded compared to the previous month.
+
+**Plot8 :**
+
+```{r Line Graph2, echo=FALSE, fig.height=4, fig.width=7}
 plot8
 
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+As observed in the numerical summaries that there is huge correlation between the total_downloads and transcription views, this line plot clearly shows that in both months, maximum of the course materials are downloaded as the transcripts. And in the month of **November** the materials that are downloaded as the transcript view has increased to the peak.
+
