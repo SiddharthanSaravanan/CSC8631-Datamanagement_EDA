@@ -1,3 +1,58 @@
+commit cb06d0d4f9e35c7f3056c8b9c09b484e038422b5
+Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
+Date:   Thu Dec 3 23:27:19 2020 +0000
+
+    Project Report files
+
+commit 393652faa41a1ee250f8c8d42da183f8d5b3249c
+Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
+Date:   Thu Dec 3 23:27:02 2020 +0000
+
+    Graphical plots
+
+commit 6770e7dea1e06ee2fe9d838206cba5c51bffd7a3
+Merge: 9e80061 babe3b1
+Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
+Date:   Thu Dec 3 23:24:29 2020 +0000
+
+    Merge branch 'master' of https://github.com/SiddharthanSaravanan/CSC8631-Datamanagement_EDA
+
+commit 9e80061d9386e8f4fa3174938fbe4cbdda8d29fa
+Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
+Date:   Thu Dec 3 23:22:26 2020 +0000
+
+    Graph plot
+
+commit fe010155e49addb05435e22bcc194dea4777214d
+Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
+Date:   Thu Dec 3 23:18:03 2020 +0000
+
+    Project report files
+
+commit afbcf3b705809e6181e1a3da9e50354150b7bd74
+Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
+Date:   Thu Dec 3 23:17:52 2020 +0000
+
+    Analysis file
+
+commit be09d0568734880ebfccc9497904591660719c43
+Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
+Date:   Thu Dec 3 23:17:24 2020 +0000
+
+    Graphical plots
+
+commit babe3b17fa63577c5d3058c027b5687b88bbdacc
+Author: SiddharthanSaravanan <74244449+SiddharthanSaravanan@users.noreply.github.com>
+Date:   Thu Dec 3 22:03:43 2020 +0000
+
+    Delete GitLogFile.txt
+
+commit 2565173395c71b94750eebbaa2be5dd8112c98b1
+Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
+Date:   Thu Dec 3 22:02:37 2020 +0000
+
+    Git commit Logs
+
 commit cb64aa012015c1d03424ae2750a3c22ac14df908
 Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
 Date:   Thu Dec 3 20:01:36 2020 +0000
