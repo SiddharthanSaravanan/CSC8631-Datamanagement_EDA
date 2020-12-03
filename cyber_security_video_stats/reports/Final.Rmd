@@ -1,0 +1,80 @@
+---
+title: "Analysis of cyber security Video Stats"
+author: "Siddharthan"
+date: "02/12/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir= normalizePath('..'))
+```
+
+## Introduction
+
+This is a project report document. The document consists of the analysis of statistics for Future Learn MOOC data set. The observations of the data are made up on different simulations on a particular period of time. The report represents the data analysis techniques that has been used to visualise the data based on the business requirements.The Future Learn MOOC dataset consists of various datafiles such as enrolments, survey response, leaving survey response, question response, step activity, video stats. The observations made on these data are captured based on different simulations on a particular period of time. This report consists of a analysis that is made on the video statistics datafiles. The data consists of various responses of different course modules like video duration, total views of the courses, views based on the regions, views based on the hardware devices and much more. With these responses an exploratory data analysis is made up with some numerical and graphical summaries. 
+
+## Analysis
+
+Before proceeding with the analysis, the data is inspected to verify whether the structure of the data is good for analysis and whether the data has unknown values in some of the responses. These unknown values are removed based on the data cleaning process and the structure is also changed for the columns which are required for analysis. 
+
+Some assumptions are made which were missing in the dataset such as the year and month at which the responses were recorded. These two columns where inserted into the dataset and they are used in the analysis process. Since there were less observations, two datafiles have been used in the analysis process and these two files where combined and stored as a dataframe.
+
+```{r include=FALSE}
+#Load the project
+library('ProjectTemplate')
+load.project()
+#Execute the analysis file
+source("src/Analysis.R")
+```
+
+## Exploratory Analysis based on Numerical summaries
+
+The data mainly consists of values encoded as quantitative variables. Using 
+
+
+```{r echo=FALSE, include=FALSE}
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r echo=FALSE, fig.height=4, fig.width=7}
+plot1
+```
+
+
+```{r echo=FALSE, fig.height=4, fig.width=7}
+plot2
+```
+
+
+
+```{r echo=FALSE, fig.height=4, fig.width=7}
+plot3
+```
+
+```{r echo=FALSE, fig.height=4, fig.width=7}
+plot4
+```
+
+```{r echo=FALSE, fig.height=4, fig.width=7}
+plot5
+```
+
+```{r echo=FALSE, fig.height=4, fig.width=7}
+plot6
+```
+
+```{r echo=FALSE, fig.height=4, fig.width=7}
+plot7
+```
+
+```{r fig.height=4, fig.width=7}
+plot8
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
