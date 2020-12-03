@@ -49,4 +49,3 @@ ggsave(file.path('graphs','plot7.pdf'))
 plot8 = ggplot(video_stats_data, aes(total_downloads, total_transcript_views, color = month)) + geom_line() + ggtitle(wrapper("Analysis of total downloads made as transcripts"))
 #Save the plot8 in the graphs directory
 ggsave(file.path('graphs','plot8.pdf'))
-
