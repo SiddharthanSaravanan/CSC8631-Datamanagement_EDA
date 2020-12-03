@@ -67,7 +67,7 @@ The plot represents the analysis made with total views of the courses between tw
 plot2
 ```
 
-The above bar plot represents the analysis made based on the modeules that are viewed ***100%*** from the Asia region. From this graph its easy to interpret that above **60%** of the learners have viewed most of the modules completely. And below **40%** of the learners have viewed two or three modules completely. This suggests that the learners are not interested in viewing those modules as it maybe out of the scope.
+The above bar plot represents the analysis made based on the modeules that are viewed ***100%*** from the Asia region. From this graph its easy to interpret that above **60%** of the learners have viewed most of the modules completely. And below **40%** of the learners have viewed two or three modules completely. This suggests that the learners are not interested in viewing those modules as it maybe out of the scope. Approximately **50% - 60%** of the learners are completing the modules which they find it covers their necessity.
 
 **Plot3 :**
 
