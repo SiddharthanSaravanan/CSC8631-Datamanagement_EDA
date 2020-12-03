@@ -19,5 +19,8 @@ video_stats_data$month=factor(video_stats_data$month, ordered = TRUE,
 #Cleaning the data - Removing the columns that has values as 0
 video_stats_data = video_stats_data[, colSums(video_stats_data != 0) > 0]
 
+#Converting the dataset into a dataframe
+video_stats_data = as.data.frame(video_stats_data)
+
 #Analyse the structure of the data
 str(video_stats_data)
