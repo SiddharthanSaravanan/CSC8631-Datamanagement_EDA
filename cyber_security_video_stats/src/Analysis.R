@@ -1,6 +1,3 @@
-#Load the project
-library('ProjectTemplate')
-load.project()
 
 #EDA of numerical summaries
 summary(video_stats_data[,21:26])
@@ -16,7 +13,7 @@ plot1 = ggplot(video_stats_data, aes(step_position, total_views, fill = month))+
 ggsave(file.path('graphs','plot1.pdf'))
 
 #Plot 2 represents asia_views based on courses stating which course has viewed 100%
-plot2 = ggplot(video_stats_data, aes(step_position, asia_views_percentage, fill = viewed_onehundred_percent))+geom_col(position = 'dodge') + labs(fill = "Viewed 100%") + 
+plot2 = ggplot(video_stats_data, aes(step_position, asia_views_percentage, fill = viewed_onehundred_percent))+geom_col(position = 'dodge') + scale_fill_continuous(high = "#132B43", low = "#56B1F7") + labs(fill = "Viewed 100%") +
   ggtitle(wrapper("Analysis of the courses based on views percentage from Asia region", width = 45))
 #Save the plot2 in the graphs directory
 ggsave(file.path('graphs','plot2.pdf'))
