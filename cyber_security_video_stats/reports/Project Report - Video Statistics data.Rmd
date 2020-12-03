@@ -1,0 +1,93 @@
+---
+title: "Analysis of cyber security Video Stats"
+author: "Siddharthan"
+date: "02/12/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir= normalizePath('..'))
+```
+
+## Introduction
+
+This is a project report document. The document consists of the analysis of statistics for Future Learn MOOC data set. The observations of the data are made up on different simulations on a particular period of time. The report represents the data analysis techniques that has been used to visualise the data based on the business requirements.The Future Learn MOOC dataset consists of various datafiles such as enrolments, survey response, leaving survey response, question response, step activity, video stats. The observations made on these data are captured based on different simulations on a particular period of time. This report consists of a analysis that is made on the video statistics datafiles. The data consists of various responses of different course modules like video duration, total views of the courses, views based on the regions, views based on the hardware devices and much more. With these responses an exploratory data analysis is made up with some numerical and graphical summaries. 
+
+## Analysis
+
+Before proceeding with the analysis, the data is inspected to verify whether the structure of the data is good for analysis and whether the data has unknown values in some of the responses. These unknown values are removed based on the data cleaning process and the structure is also changed for the columns which are required for analysis. 
+
+Some assumptions are made which were missing in the dataset such as the year and month at which the responses were recorded. These two columns where inserted into the dataset and they are used in the analysis process. Since there were less observations, two datafiles have been used in the analysis process and these two files where combined and stored as a dataframe.
+
+```{r include=FALSE}
+#Load the project
+library('ProjectTemplate')
+load.project()
+#Execute the analysis file
+source("src/Analysis.R")
+```
+
+## Numerical Analysis
+
+The data mainly consists of values encoded as quantitative variables. The first approach to analysis the data based on the numerical process is to summarize the dataset inorder to get the central tendancy. It can be done by calling the summary() function over the dataset. Here the central tendancy is calculated for set of responses which would be easy for analysing.
+
+
+```{r echo=TRUE}
+summary(video_stats_data[,21:26])
+```
+
+The central tendancy is calculated for the responses that are recorded based on the regions. While looking at this we can consider that majority of the courses are viewed highly from the Europe region rather than the other region. The maximum view percentage from the Europe region 67.25 where as the courses are viewed less in the South America region.
+
+Further to our analysis we can try to find is there any correlation between the responses recorded. To compute the correlation matrix the cor() function can be used. The correlation between different responses establishes that many responses are correlated to each other. In that, we could find that the total_downloads response is highly correlated with transcript_views response of **0.9409151**
+
+```{r echo=TRUE}
+cor(video_stats_data[,5], video_stats_data[,7])
+```
+
+The index 5 and 7 from the code represents the two responses total_downloads abd total_transcript_views respectively. From this its applicable to represent that the courses that are downloaded mostly as a transcript type. With this numerical summaries, the data can be further analysed graphically.
+
+## Graphical Analysis
+
+The graphical analysis is made with line graphs, points and bar plots, which helps to visualize and interpret the data. The **ggplot2** library is used for this graphical analysis. 
+
+```{r Bar Plot1, echo=FALSE, fig.height=4, fig.width=7}
+plot1
+```
+
+The plot represents the analysis made with total views of the courses between two months from the dataset. This plot graphically explains that there is a certain amount of increase in views to the latter month which is *November* compared to that of the previous month *September*. The modules has made some significant impact with the leaners and this made a growth in the trend  of viewers. The modules which are viewed in less numbers were also made an impact the following month with the increase in the viewers.
+\newline
+
+```{r Bar Plot2, echo=FALSE, fig.height=4, fig.width=7}
+plot2
+```
+
+The above bar plot represents the analysis made based on the modeules that are viewed *100%* from the Asia region. From this graph its easy to interpret that above **60%** of the learners have viewed most of the modules completely. And below **40%** of the learners have viewed two or three modules completely. This suggests that the learners are not interested in viewing those modules as it maybe out of the scope.
+\newline
+
+```{r echo=FALSE, fig.height=4, fig.width=7}
+plot3
+```
+
+```{r echo=FALSE, fig.height=4, fig.width=7}
+plot4
+```
+
+```{r echo=FALSE, fig.height=4, fig.width=7}
+plot5
+```
+
+```{r echo=FALSE, fig.height=4, fig.width=7}
+plot6
+```
+
+```{r echo=FALSE, fig.height=4, fig.width=7}
+plot7
+```
+
+```{r fig.height=4, fig.width=7}
+plot8
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
