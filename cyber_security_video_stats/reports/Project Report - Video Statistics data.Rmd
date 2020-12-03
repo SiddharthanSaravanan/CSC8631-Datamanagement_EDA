@@ -118,3 +118,8 @@ plot8
 
 As observed in the numerical summaries that there is huge correlation between the total_downloads and transcription views, this line plot clearly shows that in both months, maximum of the course materials are downloaded as the transcripts. And in the month of **November** the materials that are downloaded as the transcript view has increased to the peak.
 
+
+## Conclusion
+
+After a brief analysis of the data set available, it can be said that the course modules are quite engaging for the learners considering the number of downloads of the course materials. This depicts that the learners want to use it for reference later or share with other people. The length of video,
+however, at times makes the content lose it’s appeal on the viewers and they tend to not finish the course till the very end. More information about the leaving responses of such learner can be gained through the leaving response surveys conducted which is out of the scope of this analysis.
