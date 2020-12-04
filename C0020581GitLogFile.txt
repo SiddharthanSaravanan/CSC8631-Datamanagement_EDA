@@ -1,3 +1,21 @@
+commit 23a23c36077ad08bdf4ed68810ff86c043d4da44
+Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
+Date:   Fri Dec 4 15:27:53 2020 +0000
+
+    Project Report files
+
+commit 81f94d1f70115ee01b1acb0a76b9742640fff99d
+Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
+Date:   Fri Dec 4 15:27:35 2020 +0000
+
+    Graphical plots
+
+commit dd1e3d86e2d27e5aee1f440c679cea6b7e2aa9b4
+Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
+Date:   Fri Dec 4 11:30:10 2020 +0000
+
+    Git commit logs
+
 commit 0b11c01d94209e124ac8e734fe419e3f856fa58e
 Author: SiddharthanSaravanan <s.saravanan2@newcastle.ac.uk>
 Date:   Fri Dec 4 11:28:28 2020 +0000
